@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers | Ko-matha Dairy Farm</title>
+    <style>
+        /* CSS for the entire page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0F2945;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo img {
+            width: 150px;
+        }
+
+        .navbar {
+            background: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar .menu-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar .menu-bar .menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .menu-bar .menu li {
+            margin: 0 15px;
+        }
+
+        .navbar .menu-bar .menu a {
+            text-decoration: none;
+            color: #0F2945;
+        }
+
+        .main {
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+
+        .main .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .farmer-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .farmer-card img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+        }
+
+        .farmer-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .farmer-card p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #0F2945;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .box-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        footer .box {
+            flex: 1;
+            margin: 10px;
+        }
+
+        footer .box h1 {
+            font-size: 1.5em;
+        }
+
+        footer .box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer .box ul li {
+            margin: 10px 0;
+        }
+
+        footer .box ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer .search-box {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        footer .search-box .input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer .search-box .btn {
+            background: #fff;
+            color: #0F2945;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="path/to/your/logo.png" alt="Ko-matha Dairy Farm Logo">
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <section class="navbar">
+        <div class="menu-bar" >
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="farmers.html">Farmer</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Main Section -->
+    <section class="main">
+        <div class="content">
+            <h1>Meet Our Farmers</h1>
+
+            <div class="farmer-card">
+                <img src="../milcow/assets/image/farmer2.jpg" alt="Tharun">
+                <h2>Tharun</h2>
+                <p>Tharun is dedicated to ensuring the highest quality of milk and dairy products.</p>
+            </div>
+
+            <div class="farmer-card">
+                <img src="../milcow/assets/image/farmer1.jpg" alt="Govindhan">
+                <h2>Govindhan</h2>
+                <p>Govindhan is an expert in dairy farming with years of experience in the field.</p>
+            </div>
+
+            <div class="farmer-card">
+                <img src="../milcow/assets/image/farmer3.jpg"alt="Kanagaraj">
+                <h2>Kanagaraj</h2>
+                <p>Kanagaraj focuses on animal welfare and maintaining the farm's standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="box-container">
+            <div class="box">
+                <h1>About Us</h1>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h1>Newsletter</h1>
+                <form action="#" method="post" class="search-box">
+                    <input type="text" class="input" placeholder="Enter your email...">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

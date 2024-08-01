@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ko-matha Dairy Farm</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: #fff;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+        }
+
+        header .logo img {
+            width: 1500px;
+            height: 370px;
+        }
+
+        .navbar {
+            background: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar .menu-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar .menu-bar .menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .menu-bar .menu li {
+            margin: 0 15px;
+        }
+
+        .navbar .menu-bar .menu a {
+            text-decoration: none;
+            color: #0F2945;
+        }
+
+        .navbar .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .search .btn-search {
+            background: #0F2945;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .navbar .search .input-search {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+
+        .main {
+            padding: 50px 20px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        .main .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .main .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .main .content p {
+           
+            margin: 20px 0;
+        }
+
+        .main .btn {
+            margin-top: 20px;
+        }
+
+        .main .btn a {
+            text-decoration: none;
+            color: #fff;
+            background: #0F2945;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .about {
+            padding: 50px 20px;
+            
+        }
+
+        .about .content {
+            background: url('../milcow/assets/image/logo1.jpg') 
+    background-size: cover;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about .content h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .about .content p {
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+
+        .about .tick ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .about .tick ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .about .tick ul li i {
+            color: #0F2945;
+            margin-right: 10px;
+        }
+
+        .about .box-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .about .box-container .box {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .about .box-container .box img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .about .box-container .box i {
+            font-size: 2em;
+            color: #0F2945;
+        }
+
+        .about .box-container .box .text {
+            margin-top: 20px;
+        }
+
+        .about .box-container .box .text span {
+            font-size: 2.2em;
+        }
+
+        .about .box-container .box .text p {
+            font-size: 1.2em;
+        }
+
+        footer {
+            background: #0F2945;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .box-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        footer .box {
+            flex: 1;
+            margin: 10px;
+        }
+
+        footer .box h1 {
+            font-size: 1.5em;
+        }
+
+        footer .box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer .box ul li {
+            margin: 10px 0;
+        }
+
+        footer .box ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer .search-box {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        footer .search-box .input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer .search-box .btn {
+            background: #fff;
+            color: #0F2945;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../milcow/assets/image/logo2.jpg" alt="Ko-matha Dairy Farm Logo">
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <section class="navbar">
+        <div class="menu-bar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                
+                <li>
+                    <a href="#">Products</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="milk.html">Milk</a></li>
+                            <li><a href="cheese.html">Cheese</a></li>
+                            <li><a href="yogurt.html">Yogurt</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                   
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" class="input-search" placeholder="Type to Search...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <section class="main">
+        <div class="content">
+            <h1>About Ko-matha Dairy Farm</h1>
+            <p>Welcome to Ko-matha Dairy Farm, where we are dedicated to producing the finest dairy products. Our commitment to quality and tradition ensures that every product we offer is made with the utmost care and the highest standards.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="content">
+            <h2>Our Commitment to Quality</h2>
+            <p>At Ko-matha Dairy Farm, we believe in quality, sustainability, and freshness. Our farm operates with a focus on ethical practices and environmental responsibility, delivering dairy products that you can trust and enjoy.</p>
+            <div class="tick">
+                <ul>
+                    <li><i class="fa-solid fa-check-double"></i> Dedicated to ethical farming practices.</li>
+                    <li><i class="fa-solid fa-check-double"></i> Focused on sustainable and environmentally-friendly methods.</li>
+                    <li><i class="fa-solid fa-check-double"></i> Committed to delivering fresh and high-quality dairy products.</li>
+                </ul>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fa-solid fa-cow"></i>
+                    <div class="text">
+                        <span>50+</span>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="../milcow/assets/image/logo1.jpg" alt="Dairy Farm Image">
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-star"></i>
+                    <div class="text">
+                        <span>100%</span>
+                        <p>Fresh Quality Guaranteed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="box-container">
+            <div class="box">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li><a href="#">Address</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h1>Follow Us</h1>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h1>Newsletter</h1>
+                <div class="search-box">
+                    <input type="text" class="input" placeholder="Your Email">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

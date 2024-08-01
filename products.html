@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Ko-matha Dairy Farm</title>
+    <style>
+        /* CSS for the entire page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #fff;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+        }
+
+        header .logo img {
+            width: 1500px;
+            height: 250px;
+        }
+
+        .navbar {
+            background: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar .menu-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar .menu-bar .menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .menu-bar .menu li {
+            margin: 0 15px;
+        }
+
+        .navbar .menu-bar .menu a {
+            text-decoration: none;
+            color: #0F2945;
+        }
+
+        .main {
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+
+        .main .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: #fff;
+            background: url('../milcow/assets/image/freshmilk.jpg')
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            background: url('../milcow/assets/image/freshmilk.jpg')
+    
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+        }
+
+        .product-card h2 {
+            background: url('../milcow/assets/image/freshmilk.jpg')
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .product-card .price {
+            font-size: 1.2em;
+            color: #0F2945;
+            margin: 10px 0;
+        }
+
+        .farmers-section {
+            margin-top: 50px;
+        }
+
+        .farmer-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .farmer-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .farmer-card p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #0F2945;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .box-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        footer .box {
+            flex: 1;
+            margin: 10px;
+        }
+
+        footer .box h1 {
+            font-size: 1.5em;
+        }
+
+        footer .box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer .box ul li {
+            margin: 10px 0;
+        }
+
+        footer .box ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer .search-box {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        footer .search-box .input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer .search-box .btn {
+            background: #fff;
+            color: #0F2945;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="../milcow/assets/image/logo2.jpg "alt="Ko-matha Dairy Farm Logo">
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <section class="navbar">
+        <div class="menu-bar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="farmers.html">Farmers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <section class="main">
+        <div class="content">
+            <h1>Our Products</h1>
+
+            <!-- Product List -->
+            <div class="product-card">
+                <img src="../milcow/assets/image/freshmilk2.jpg" alt="Product 1">
+                <h2>Fresh Milk</h2>
+                <p>Our fresh milk is delivered daily and is full of natural flavor and nutrients.</p>
+                <div class="price">₹250 per liter</div>
+            </div>
+
+            <div class="product-card">
+                <img src="../milcow/assets/image/cheese.jpg" alt="Product 2">
+                <h2>Cheddar Cheese</h2>
+                <p>Aged to perfection, our cheddar cheese adds a rich, creamy taste to your dishes.</p>
+                <div class="price">₹400 per block</div>
+            </div>
+
+            <div class="product-card">
+                <img src="../milcow/assets/image/yogurt.jpg" alt="Product 3">
+                <h2>Greek Yogurt</h2>
+                <p>Thick and creamy, our Greek yogurt is perfect for a healthy breakfast or snack.</p>
+                <div class="price">₹300 per tub</div>
+            </div>
+
+            <div class="product-card">
+                <img src="../milcow/assets/image/butter.jpg" alt="Product 4">
+                <h2>Butter</h2>
+                <p>Rich and creamy butter made from our fresh cream.</p>
+                <div class="price">₹350 per pack</div>
+            </div>
+
+            <div class="product-card">
+                <img src="../milcow/assets/image/paneer.jpg" alt="Product 5">
+                <h2>Paneer</h2>
+                <p>Freshly made paneer with a soft and smooth texture.</p>
+                <div class="price">₹300 per 500g</div>
+            </div>
+
+            <div class="product-card">
+                <img src="../milcow/assets/image/ghee.jpg" alt="Product 6">
+                <h2>Ghee</h2>
+                <p>Pure and aromatic ghee made from the finest milk.</p>
+                <div class="price">₹800 per liter</div>
+            </div>
+
+            <div class="product-card">
+                <img src="../milcow/assets/image/powder.jpg"  alt="Product 7">
+                <h2>Milk Powder</h2>
+                <p>Convenient and long-lasting milk powder for your daily needs.</p>
+                <div class="price">₹450 per pack</div>
+            </div>
+
+            <div class="product-card">
+                <img src="../milcow/assets/image/curd.jpg"  alt="Product 8">
+                <h2>Curd</h2>
+                <p>Our homemade curd is tangy and rich in probiotics.</p>
+                <div class="price">₹200 per tub</div>
+            </div>
+
+            <div class="product-card">
+                <img src="../milcow/assets/image/milkf.jpg"  alt="Product 9">
+                <h2>Flavored Milk</h2>
+                <p>Delicious milk available in various flavors like chocolate and strawberry.</p>
+                <div class="price">₹150 per bottle</div>
+            </div>
+
+            <div class="product-card">
+                <img src="../milcow/assets/image/milkshake.jpg"  alt="Product 10">
+                <h2>Milk Shake</h2>
+                <p>Rich and creamy milk shakes in different flavors.</p>
+                <div class="price">₹180 per bottle</div>
+            </div>
+
+            <!-- Farmers Section -->
+            <section class="farmers-section">
+                <h1>Meet Our Farmers</h1>
+
+                <div class="farmer-card">
+                    <h2>Tharun</h2>
+                    <p>Tharun is dedicated to ensuring the highest quality of milk and dairy products.</p>
+                </div>
+
+                <div class="farmer-card">
+                    <h2>Govindhan</h2>
+                    <p>Govindhan is an expert in dairy farming with years of experience in the field.</p>
+                </div>
+
+                <div class="farmer-card">
+                    <h2>Kanagaraj</h2>
+                    <p>Kanagaraj focuses on animal welfare and maintaining the farm's standards.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="box-container">
+            <div class="box">
+                <h1>About Us</h1>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h1>Newsletter</h1>
+                <form action="#" method="post" class="search-box">
+                    <input type="text" class="input" placeholder="Enter your email...">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

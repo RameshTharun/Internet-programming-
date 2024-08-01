@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Ko-matha Dairy Farm</title>
+    <style>
+        /* CSS for the entire page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0F2945;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo img {
+            width: 150px;
+        }
+
+        .navbar {
+            background: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar .menu-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar .menu-bar .menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .menu-bar .menu li {
+            margin: 0 15px;
+        }
+
+        .navbar .menu-bar .menu a {
+            text-decoration: none;
+            color: #0F2945;
+        }
+
+        .main {
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+
+        .main .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-post {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .blog-post h2 {
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+
+        .blog-post p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .blog-post img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #0F2945;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .box-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        footer .box {
+            flex: 1;
+            margin: 10px;
+        }
+
+        footer .box h1 {
+            font-size: 1.5em;
+        }
+
+        footer .box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer .box ul li {
+            margin: 10px 0;
+        }
+
+        footer .box ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer .search-box {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        footer .search-box .input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer .search-box .btn {
+            background: #fff;
+            color: #0F2945;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="path/to/your/logo.png" alt="Ko-matha Dairy Farm Logo">
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <section class="navbar">
+        <div class="menu-bar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="farmers.html">Farmers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <section class="main">
+        <div class="content">
+            <h1>Our Blog</h1>
+
+            <div class="blog-post">
+                <img src="../milcow/assets/image/farm1.jpg" alt="Blog Post 1" style="width: 100%; height: 900px;">
+                <h2>How We Ensure Quality</h2>
+                <p>At Ko-matha Dairy Farm, we use traditional methods and natural ingredients to ensure top quality in our products. Our stringent quality checks and commitment to hygiene help us maintain the highest standards.</p>
+            </div>
+
+            <div class="blog-post">
+                <img src="../milcow/assets/image/inno.jpg" alt="Blog Post 1" style="width: 100%; height: auto;">
+                <h2>Innovations in Dairy Farming</h2>
+                <p>Our farm is at the forefront of innovations in dairy farming. From advanced milking techniques to sustainable farming practices, we are dedicated to improving our methods and enhancing the quality of our dairy products.</p>
+            </div>
+
+            <div class="blog-post">
+                <img src="../milcow/assets/image/team.jpg" alt="Blog Post 1" style="width: 100%; height: auto; ">
+                <h2>Meet Our Team</h2>
+                <p>Our dedicated team is the heart of Ko-matha Dairy Farm. From skilled farmers to quality control experts, everyone plays a crucial role in bringing you fresh and nutritious dairy products every day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="box-container">
+            <div class="box">
+                <h1>About Us</h1>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h1>Newsletter</h1>
+                <form action="#" method="post" class="search-box">
+                    <input type="text" class="input" placeholder="Enter your email...">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
